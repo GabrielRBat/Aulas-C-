@@ -5,46 +5,52 @@ class Program
 {
     static void Main()
     {
-        Login();
+        calculateAverage();
     }
     
-    public static void Login()
+    static double[] captureValues() 
     {
-        Console.WriteLine("Bem vindo ao sistema!");
+        Console.WriteLine("Bem vindo ao sistema!\n");
+        Console.WriteLine("Digite 5 numeros para calcular a media dos mesmos.");
 
-        Console.WriteLine("Digite seu nome de usuário: ");
-        string username;
-        username = Console.ReadLine();
-
-        Console.WriteLine("Digite sua senha: ");
-        string pass;
-        pass = Console.ReadLine();
-
-        User userTemp = new User(username, pass);
-
-        //Simulação de usuários cadastrados
-        ArrayList userList = new ArrayList();
-        User user1 = new User("Pedro", "123321");
-        userList.Add(user1);
-
-        User user2 = new User("Roger", "roger");
-        userList.Add(user2);
-        //Fim
-
-        foreach(var user in userList)
+        double[] capturedValues = new double[5];
+        for(int i = 0; i < 5 ; i ++)
         {
-            //Valida se var é do tipo User e cria uma variável chamada userObjeto (userObjeto é igual a user)
-            if(user is User userObjeto)
-            {                
-                if(userTemp.getName().Equals(userObjeto.getName()) && userTemp.getPass().Equals(userObjeto.getPass()))
-                {
-                    Console.WriteLine("Login autorizado!");
-                    return;
-                }
+            try
+            {
+                string stringValue = Console.ReadLine();
+                capturedValues[i] = Convert.ToDouble(stringValue);
+            } 
+            catch(Exception e)
+            {
+                Console.WriteLine("Ocorreu um erro durante a captura dos valores. ERRO: " + e.Message);
             }
-            continue;
+        }
+        
+        Console.WriteLine("Valores lidos com sucesso!");
+        return capturedValues;
+    }
+
+    static void calculateAverage()
+    {
+        double[] capturedValues = captureValues();
+        double totalValue = 0;
+
+        foreach(double value in capturedValues)
+        {
+            totalValue += value;
         }
 
-        Console.WriteLine("Nome de usuário ou senha incorretos!");
+        double avarageValue = totalValue/5;
+        
+        foreach(double value in capturedValues)
+        {
+            if(value < avarageValue)
+            {
+                Console.WriteLine("Valor: " + value + " é menor que a média: " + avarageValue);
+                continue;
+            }
+            Console.WriteLine("Valor: " + value + " é maior ou igual a média: " + avarageValue);
+        }
     }
 }

@@ -12,3 +12,4 @@ C:\_ws\TreinoCS\obj\Debug\net8.0\refint\TreinoCS.dll
 C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.pdb
 C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.genruntimeconfig.cache
 C:\_ws\TreinoCS\obj\Debug\net8.0\ref\TreinoCS.dll
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.sourcelink.json

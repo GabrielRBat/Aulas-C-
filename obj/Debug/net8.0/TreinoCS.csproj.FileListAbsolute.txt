@@ -1,0 +1,14 @@
+C:\_ws\TreinoCS\bin\Debug\net8.0\TreinoCS.exe
+C:\_ws\TreinoCS\bin\Debug\net8.0\TreinoCS.deps.json
+C:\_ws\TreinoCS\bin\Debug\net8.0\TreinoCS.runtimeconfig.json
+C:\_ws\TreinoCS\bin\Debug\net8.0\TreinoCS.dll
+C:\_ws\TreinoCS\bin\Debug\net8.0\TreinoCS.pdb
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.AssemblyInfoInputs.cache
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.AssemblyInfo.cs
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.csproj.CoreCompileInputs.cache
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.dll
+C:\_ws\TreinoCS\obj\Debug\net8.0\refint\TreinoCS.dll
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.pdb
+C:\_ws\TreinoCS\obj\Debug\net8.0\TreinoCS.genruntimeconfig.cache
+C:\_ws\TreinoCS\obj\Debug\net8.0\ref\TreinoCS.dll
